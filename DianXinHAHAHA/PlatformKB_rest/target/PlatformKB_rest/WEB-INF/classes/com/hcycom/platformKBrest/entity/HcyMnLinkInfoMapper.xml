@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hcycom.platformKBrest.dao.HcyMnLinkInfoMapper">
+	<resultMap type="com.hcycom.platformKBrest.entity.HcyMnLinkInfo" id="MnLinkInfoMap">
+		<id column="Link_id" property="linkId"/>
+		<result column="Link_category" property="linkCategory"/>
+		<result column="Link_name" property="linkName"/>
+		<result column="Device_A_id" property="deviceAId"/>
+		<result column="Device_A_name" property="deviceAName"/>
+		<result column="Device_A_port" property="deviceAPort"/>
+		<result column="Device_A_ip" property="deviceAIp"/>
+		<result column="Device_Z_id" property="deviceZId"/>
+		<result column="Device_Z_name" property="deviceZName"/>
+		<result column="Device_Z_port" property="deviceZPort"/>
+		<result column="Device_Z_ip" property="deviceZIp"/>
+		<result column="Transmission_no" property="transmissionNo"/>
+		<result column="Patch_cords" property="patchCords"/>
+		<result column="In_test" property="inTest"/>
+		<result column="Command_template" property="commandTemplate"/>
+		<result column="Remarks" property="remarks"/>
+	</resultMap>
+	<insert id="insertMnLinkInfo" parameterType="com.hcycom.platformKBrest.entity.HcyMnLinkInfo">
+		<selectKey keyProperty="linkId" order="BEFORE" resultType="java.lang.String">
+			select HCY_MN_LINK_INFO_ID_SEQ.nextval from dual
+		</selectKey>
+		insert into HCY_MN_LINK_INFO
+		(Link_id,Link_category,Link_name,Device_A_id,Device_A_name,Device_A_port,Device_A_ip,
+		Device_Z_id,Device_Z_name,Device_Z_port,Device_Z_ip,Transmission_no,Patch_cords,In_test,
+		Command_template,Remarks)
+		values
+		(#{linkId,jdbcType=VARCHAR},#{linkCategory,jdbcType=DECIMAL},#{linkName,jdbcType=VARCHAR},#{deviceAId,jdbcType=VARCHAR},#{deviceAName,jdbcType=VARCHAR},#{deviceAPort,jdbcType=VARCHAR},#{deviceAIp,jdbcType=VARCHAR},#{deviceZId,jdbcType=VARCHAR}
+		,#{deviceZName,jdbcType=VARCHAR},#{deviceZPort,jdbcType=VARCHAR},#{deviceZIp,jdbcType=VARCHAR},#{transmissionNo,jdbcType=VARCHAR},#{patchCords,jdbcType=VARCHAR},#{inTest,jdbcType=VARCHAR},#{commandTemplate,jdbcType=VARCHAR},#{remarks,jdbcType=VARCHAR})
+	</insert>
+	<delete id="deleteMnLinkInfo" parameterType="com.hcycom.platformKBrest.entity.HcyMnLinkInfo">
+		delete from HCY_MN_LINK_INFO where Link_id = #{linkId}
+	</delete>
+	<update id="updateMnLinkInfo" parameterType="com.hcycom.platformKBrest.entity.HcyMnLinkInfo">
+		update HCY_MN_LINK_INFO set Link_category = #{linkCategory},Link_name = #{linkName},Device_A_id = #{deviceAId},Device_A_name = #{deviceAName},
+		 Device_A_port = #{deviceAPort},Device_A_ip = #{deviceAIp},Device_Z_id = #{deviceZId},Device_Z_name = #{deviceZName},Device_Z_port = #{deviceZPort},
+		 Device_Z_ip = #{deviceZIp},Transmission_no = #{transmissionNo},Patch_cords = #{patchCords},In_test = #{inTest},Command_template = #{commandTemplate},Remarks = #{remarks}
+		 where Link_id = #{linkId}
+	</update>
+	<select id="showMnLinkInfo" resultMap="MnLinkInfoMap">
+	select Link_id,Link_category,Link_name,Device_A_id,Device_A_name,Device_A_port,Device_A_ip,
+		Device_Z_id,Device_Z_name,Device_Z_port,Device_Z_ip,Transmission_no,Patch_cords,In_test,
+		Command_template,Remarks
+		from HCY_MN_LINK_INFO
+	</select>
+	<select id="showMnLinkInfoById" parameterType="com.hcycom.platformKBrest.entity.HcyMnLinkInfo" resultMap="MnLinkInfoMap">
+		select Link_id,Link_category,Link_name,Device_A_id,Device_A_name,Device_A_port,Device_A_ip,
+		Device_Z_id,Device_Z_name,Device_Z_port,Device_Z_ip,Transmission_no,Patch_cords,In_test,
+		Command_template,Remarks
+		from HCY_MN_LINK_INFO
+		where Link_id = #{linkId}
+	</select>
+</mapper>

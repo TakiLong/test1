@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hcycom.pingtest.dao.CirAddinfoMapper" >
+  <resultMap id="BaseResultMap" type="com.hcycom.pingtest.entity.CirAddinfo" >
+    <result column="CIRCUIT_NO" property="circuitNo" jdbcType="VARCHAR" />
+    <result column="CUST_NAME" property="custName" jdbcType="VARCHAR" />
+    <result column="VPN_CODE" property="vpnCode" jdbcType="VARCHAR" />
+    <result column="PE_IP" property="peIp" jdbcType="VARCHAR" />
+    <result column="CE_IP" property="ceIp" jdbcType="VARCHAR" />
+    <result column="PE_NAME" property="peName" jdbcType="VARCHAR" />
+  </resultMap>
+   <sql id="Base_Column_List" >
+	CIRCUIT_NO, VPN_CODE, PE_IP, CE_IP, PE_NAME
+  </sql>
+  <select id="selectAll"   resultMap="BaseResultMap">
+    select
+    CIRCUIT_NO, VPN_CODE, PE_IP, CE_IP, PE_NAME
+    from CTG_VPN_CIRCUIT_ADDINFO
+  </select>
+  <select id="selectAllNo" resultMap="BaseResultMap">
+    select
+    CIRCUIT_NO
+    from CTG_VPN_CIRCUIT_ADDINFO
+  </select>
+  <select id="selectByNo" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+     t1.CIRCUIT_NO, t1.VPN_CODE, t1.PE_IP, t1.CE_IP, t1.PE_NAME,t2.CUST_NAME
+    from (select * from CTG_VPN_CIRCUIT_ADDINFO where CIRCUIT_NO = #{circuitNo,jdbcType=VARCHAR}) t1 
+    left join V_GET_VPN_CIRCUIT t2 on t1.CIRCUIT_NO = t2.CIRCUIT_NO 
+  </select>
+</mapper>

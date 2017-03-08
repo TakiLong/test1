@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hcycom.pingtest.dao.PingTaskMapper" >
+  <resultMap id="BaseResultMap" type="com.hcycom.pingtest.entity.PingTask" >
+    <id column="ID" property="id" jdbcType="DECIMAL" />
+    <result column="TASK_NAME" property="taskName" jdbcType="VARCHAR" />
+    <result column="CIRCUIT_TYPE" property="circuitType" jdbcType="VARCHAR" />
+    <result column="CIRCUIT_NO" property="circuitNo" jdbcType="VARCHAR" />
+    <result column="CUST_NAME" property="custName" jdbcType="VARCHAR" />
+    <result column="SOURCE_NE" property="sourceNe" jdbcType="VARCHAR" />
+    <result column="VPN_CODE" property="vpnCode" jdbcType="VARCHAR" />
+    <result column="SOURCE_IP" property="sourceIp" jdbcType="VARCHAR" />
+    <result column="DEST_IP" property="destIp" jdbcType="VARCHAR" />
+    <result column="PING_CMD" property="pingCmd" jdbcType="VARCHAR" />
+    <result column="PERIOD" property="period" jdbcType="DECIMAL" />
+    <result column="DURATION" property="duration" jdbcType="DECIMAL" />
+    <result column="START_TIME" property="startTime" jdbcType="TIMESTAMP" />
+    <result column="END_TIME" property="endTime" jdbcType="TIMESTAMP" />
+    <result column="CREATE_TIME" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="STATUS" property="status" jdbcType="DECIMAL" />
+    <result column="LAST_EXEC_TIME" property="lastExecTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, TASK_NAME, CIRCUIT_TYPE, CIRCUIT_NO, CUST_NAME, SOURCE_NE, VPN_CODE, SOURCE_IP, 
+    DEST_IP, PING_CMD, PERIOD, DURATION, START_TIME, END_TIME, CREATE_TIME, STATUS, LAST_EXEC_TIME
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from CTG_PINGTEST_TASK
+    where ID = #{id,jdbcType=DECIMAL}
+  </select>
+
+  <insert id="insert" parameterType="com.hcycom.pingtest.entity.PingTask" >
+    <selectKey resultType="java.lang.Integer" keyProperty="id" order="BEFORE" >
+      select ctg_pingtest_task_id_seq.nextval from dual
+    </selectKey>
+    insert into CTG_PINGTEST_TASK
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      ID,
+      <if test="taskName != null" >
+        TASK_NAME,
+      </if>
+      <if test="circuitType != null" >
+        CIRCUIT_TYPE,
+      </if>
+      <if test="circuitNo != null" >
+        CIRCUIT_NO,
+      </if>
+      <if test="custName != null" >
+        CUST_NAME,
+      </if>
+      <if test="sourceNe != null" >
+        SOURCE_NE,
+      </if>
+      <if test="vpnCode != null" >
+        VPN_CODE,
+      </if>
+      <if test="sourceIp != null" >
+        SOURCE_IP,
+      </if>
+      <if test="destIp != null" >
+        DEST_IP,
+      </if>
+      <if test="pingCmd != null" >
+        PING_CMD,
+      </if>
+      <if test="period != null" >
+        PERIOD,
+      </if>
+      <if test="duration != null" >
+        DURATION,
+      </if>
+      <if test="startTime != null" >
+        START_TIME,
+      </if>
+      <if test="endTime != null" >
+        END_TIME,
+      </if>
+      <if test="createTime != null" >
+        CREATE_TIME,
+      </if>
+      <if test="status != null" >
+        STATUS,
+      </if>
+      <if test="lastExecTime != null" >
+        LAST_EXEC_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      #{id,jdbcType=DECIMAL},
+      <if test="taskName != null" >
+        #{taskName,jdbcType=VARCHAR},
+      </if>
+      <if test="circuitType != null" >
+        #{circuitType,jdbcType=VARCHAR},
+      </if>
+      <if test="circuitNo != null" >
+        #{circuitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="custName != null" >
+        #{custName,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceNe != null" >
+        #{sourceNe,jdbcType=VARCHAR},
+      </if>
+      <if test="vpnCode != null" >
+        #{vpnCode,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceIp != null" >
+        #{sourceIp,jdbcType=VARCHAR},
+      </if>
+      <if test="destIp != null" >
+        #{destIp,jdbcType=VARCHAR},
+      </if>
+      <if test="pingCmd != null" >
+        #{pingCmd,jdbcType=VARCHAR},
+      </if>
+      <if test="period != null" >
+        #{period,jdbcType=DECIMAL},
+      </if>
+      <if test="duration != null" >
+        #{duration,jdbcType=DECIMAL},
+      </if>
+      <if test="startTime != null" >
+        #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTime != null" >
+        #{endTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="lastExecTime != null" >
+        #{lastExecTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="update" parameterType="com.hcycom.pingtest.entity.PingTask" >
+    update CTG_PINGTEST_TASK
+    <set >
+      <if test="taskName != null" >
+        TASK_NAME = #{taskName,jdbcType=VARCHAR},
+      </if>
+      <if test="circuitType != null" >
+        CIRCUIT_TYPE = #{circuitType,jdbcType=VARCHAR},
+      </if>
+      <if test="circuitNo != null" >
+        CIRCUIT_NO = #{circuitNo,jdbcType=VARCHAR},
+      </if>
+      <if test="custName != null" >
+        CUST_NAME = #{custName,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceNe != null" >
+        SOURCE_NE = #{sourceNe,jdbcType=VARCHAR},
+      </if>
+      <if test="vpnCode != null" >
+        VPN_CODE = #{vpnCode,jdbcType=VARCHAR},
+      </if>
+      <if test="sourceIp != null" >
+        SOURCE_IP = #{sourceIp,jdbcType=VARCHAR},
+      </if>
+      <if test="destIp != null" >
+        DEST_IP = #{destIp,jdbcType=VARCHAR},
+      </if>
+      <if test="pingCmd != null" >
+        PING_CMD = #{pingCmd,jdbcType=VARCHAR},
+      </if>
+      <if test="period != null" >
+        PERIOD = #{period,jdbcType=DECIMAL},
+      </if>
+      <if test="duration != null" >
+        DURATION = #{duration,jdbcType=DECIMAL},
+      </if>
+      <if test="startTime != null" >
+        START_TIME = #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endTime != null" >
+        END_TIME = #{endTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        STATUS = #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="lastExecTime != null" >
+        LAST_EXEC_TIME = #{lastExecTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=DECIMAL}
+  </update>
+  <select id="selectAll"   resultMap="BaseResultMap">
+    select 
+	<include refid="Base_Column_List" />
+  	from (select a.*, rownum rn from (select *
+                  from   CTG_PINGTEST_TASK order by ID desc ) a
+         where rownum  &lt;= #{end,jdbcType=DECIMAL}) where rn  &gt;= #{start,jdbcType=DECIMAL}
+  </select>
+  <select id="selectCount"   resultType="java.lang.Integer">
+    select
+    count(id)
+    from CTG_PINGTEST_TASK 
+  </select>
+ <select id="selectByNewDate"   resultMap="BaseResultMap" parameterType="java.lang.String">
+    select 
+	<include refid="Base_Column_List" />
+  	from  CTG_PINGTEST_TASK 
+         where ( STATUS = 0 or STATUS = 1 ) and START_TIME &lt;= to_date(#{time2,jdbcType=VARCHAR},'yyyy-mm-dd hh24:mi:ss') and 
+         	(ROUND(TO_NUMBER(to_date(#{time2,jdbcType=VARCHAR},'yyyy-mm-dd hh24:mi:ss') - LAST_EXEC_TIME) * 24 * 60) &gt;= PERIOD
+         		or LAST_EXEC_TIME is null)
+  </select>
+  <update id="updateStatus" parameterType="java.lang.Integer" >
+    update CTG_PINGTEST_TASK
+    set
+    STATUS = #{status,jdbcType=DECIMAL}
+    where ID = #{id,jdbcType=DECIMAL}
+  </update>
+</mapper>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hcycom.platformKBrest.dao.CtgNetcoolAlmsourceMapper" >
+  <resultMap id="CtgNetcoolAlmsourceMap" type="com.hcycom.platformKBrest.entity.CtgNetcoolAlmsource" >
+    <result column="ID" property="id" jdbcType="DECIMAL" />
+    <result column="NAME" property="name" jdbcType="VARCHAR" />
+    <result column="NAME_EN" property="nameEn" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insert" parameterType="com.hcycom.platformKBrest.entity.CtgNetcoolAlmsource" >
+    insert into CTG_NETCOOL_ALMSOURCE (ID, NAME, NAME_EN
+      )
+    values (#{id,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{nameEn,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.hcycom.platformKBrest.entity.CtgNetcoolAlmsource" >
+    insert into CTG_NETCOOL_ALMSOURCE
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="name != null" >
+        NAME,
+      </if>
+      <if test="nameEn != null" >
+        NAME_EN,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="nameEn != null" >
+        #{nameEn,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="showAll" resultMap="CtgNetcoolAlmsourceMap">
+  	select ID, NAME, NAME_EN from CTG_NETCOOL_ALMSOURCE where SPECIALTY = 4
+  </select>
+  <select id="showNetcoolById" resultMap="CtgNetcoolAlmsourceMap" parameterType="java.lang.Integer">
+  select ID, NAME, NAME_EN from CTG_NETCOOL_ALMSOURCE where ID = #{id}
+  </select>
+</mapper>

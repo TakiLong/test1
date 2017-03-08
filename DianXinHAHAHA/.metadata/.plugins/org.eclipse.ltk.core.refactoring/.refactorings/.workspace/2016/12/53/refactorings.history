@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;vegetables&apos; to &apos;ctg_pingtest&apos;" description="Rename resource &apos;vegetables&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/vegetables" name="ctg_pingtest" stamp="1483080371788" updateReferences="true"/>
+</session>

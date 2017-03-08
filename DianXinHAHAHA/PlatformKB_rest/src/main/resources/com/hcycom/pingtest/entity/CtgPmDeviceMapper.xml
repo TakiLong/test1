@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hcycom.pingtest.dao.CtgPmDeviceMapper" >
+  <resultMap id="DeviceMap" type="com.hcycom.pingtest.entity.CtgPmDevice" >
+    <result column="PLATFORM_ID" property="platformId" jdbcType="DECIMAL" />
+    <result column="DEVICE_NAME" property="deviceName" jdbcType="VARCHAR" />
+    <result column="DEVICE_IP" property="deviceIp" jdbcType="VARCHAR" />
+    <result column="PURPOSE" property="purpose" jdbcType="VARCHAR" />
+    <result column="VENDER" property="vender" jdbcType="VARCHAR" />
+    <result column="VERSION" property="version" jdbcType="VARCHAR" />
+    <result column="REMARKS" property="remarks" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insert" parameterType="com.hcycom.pingtest.entity.CtgPmDevice" >
+    insert into CTG_PM_DEVICE (PLATFORM_ID, DEVICE_NAME, DEVICE_IP, 
+      PURPOSE, VENDER, VERSION, 
+      REMARKS)
+    values (#{platformId,jdbcType=DECIMAL}, #{deviceName,jdbcType=VARCHAR}, #{deviceIp,jdbcType=VARCHAR}, 
+      #{purpose,jdbcType=VARCHAR}, #{vender,jdbcType=VARCHAR}, #{version,jdbcType=VARCHAR}, 
+      #{remarks,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hcycom.pingtest.entity.CtgPmDevice" >
+    insert into CTG_PM_DEVICE
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="platformId != null" >
+        PLATFORM_ID,
+      </if>
+      <if test="deviceName != null" >
+        DEVICE_NAME,
+      </if>
+      <if test="deviceIp != null" >
+        DEVICE_IP,
+      </if>
+      <if test="purpose != null" >
+        PURPOSE,
+      </if>
+      <if test="vender != null" >
+        VENDER,
+      </if>
+      <if test="version != null" >
+        VERSION,
+      </if>
+      <if test="remarks != null" >
+        REMARKS,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="platformId != null" >
+        #{platformId,jdbcType=DECIMAL},
+      </if>
+      <if test="deviceName != null" >
+        #{deviceName,jdbcType=VARCHAR},
+      </if>
+      <if test="deviceIp != null" >
+        #{deviceIp,jdbcType=VARCHAR},
+      </if>
+      <if test="purpose != null" >
+        #{purpose,jdbcType=VARCHAR},
+      </if>
+      <if test="vender != null" >
+        #{vender,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null" >
+        #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="remarks != null" >
+        #{remarks,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  
+  <delete id="deleteDevice" parameterType="com.hcycom.pingtest.entity.CtgPmDevice">
+   delete from CTG_PM_DEVICE where PLATFORM_ID = #{platformId} and DEVICE_NAME = #{deviceName}
+  </delete>
+  
+  <select id="showDeviceById" parameterType="com.hcycom.pingtest.entity.CtgPmDevice" resultMap="DeviceMap">
+  select PLATFORM_ID, DEVICE_NAME, DEVICE_IP, 
+      PURPOSE, VENDER, VERSION, 
+      REMARKS from CTG_PM_DEVICE where PLATFORM_ID = #{platformId} and DEVICE_NAME = #{deviceName}
+  </select>
+  <update id="updateDevice" parameterType="com.hcycom.pingtest.entity.CtgPmDevice">
+  update CTG_PM_DEVICE set DEVICE_IP = #{deviceIp},PURPOSE = #{purpose},VENDER = #{vender},
+  VERSION = #{version},REMARKS = #{remarks} where PLATFORM_ID = #{platformId} and DEVICE_NAME = #{deviceName}
+  </update>
+  <select id="listDevice" resultMap="DeviceMap">
+  	select PLATFORM_ID, DEVICE_NAME, DEVICE_IP, 
+      PURPOSE, VENDER, VERSION, 
+      REMARKS from CTG_PM_DEVICE
+  </select>
+</mapper>

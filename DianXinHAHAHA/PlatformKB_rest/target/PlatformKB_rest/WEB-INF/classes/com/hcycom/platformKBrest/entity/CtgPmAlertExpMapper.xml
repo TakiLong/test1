@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hcycom.platformKBrest.dao.CtgPmAlertExpMapper" >
+  <resultMap id="AlertMap" type="com.hcycom.platformKBrest.entity.CtgPmAlertExp" >
+    <result column="PLATFORM_ID" property="platformId" jdbcType="DECIMAL" />
+    <result column="FAULT_TYPE" property="faultType" jdbcType="VARCHAR" />
+    <result column="FAULT_NAME" property="faultName" jdbcType="VARCHAR" />
+    <result column="CAUSE" property="cause" jdbcType="VARCHAR" />
+    <result column="SUGGEST" property="suggest" jdbcType="VARCHAR" />
+    <result column="INFLUENCE" property="influence" jdbcType="VARCHAR" />
+    <result column="REMARKS" property="remarks" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insert" parameterType="com.hcycom.platformKBrest.entity.CtgPmAlertExp" >
+    insert into CTG_PM_ALERT_EXP (PLATFORM_ID, FAULT_TYPE, FAULT_NAME, 
+      CAUSE, SUGGEST, INFLUENCE, 
+      REMARKS)
+    values (#{platformId,jdbcType=DECIMAL}, #{faultType,jdbcType=VARCHAR}, #{faultName,jdbcType=VARCHAR}, 
+      #{cause,jdbcType=VARCHAR}, #{suggest,jdbcType=VARCHAR}, #{influence,jdbcType=VARCHAR}, 
+      #{remarks,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hcycom.platformKBrest.entity.CtgPmAlertExp" >
+    insert into CTG_PM_ALERT_EXP
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="platformId != null" >
+        PLATFORM_ID,
+      </if>
+      <if test="faultType != null" >
+        FAULT_TYPE,
+      </if>
+      <if test="faultName != null" >
+        FAULT_NAME,
+      </if>
+      <if test="cause != null" >
+        CAUSE,
+      </if>
+      <if test="suggest != null" >
+        SUGGEST,
+      </if>
+      <if test="influence != null" >
+        INFLUENCE,
+      </if>
+      <if test="remarks != null" >
+        REMARKS,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="platformId != null" >
+        #{platformId,jdbcType=DECIMAL},
+      </if>
+      <if test="faultType != null" >
+        #{faultType,jdbcType=VARCHAR},
+      </if>
+      <if test="faultName != null" >
+        #{faultName,jdbcType=VARCHAR},
+      </if>
+      <if test="cause != null" >
+        #{cause,jdbcType=VARCHAR},
+      </if>
+      <if test="suggest != null" >
+        #{suggest,jdbcType=VARCHAR},
+      </if>
+      <if test="influence != null" >
+        #{influence,jdbcType=VARCHAR},
+      </if>
+      <if test="remarks != null" >
+        #{remarks,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <delete id="deleteAlert" parameterType="com.hcycom.platformKBrest.entity.CtgPmAlertExp">
+  	delete from CTG_PM_ALERT_EXP where PLATFORM_ID = #{platformId,jdbcType=DECIMAL} and FAULT_NAME = #{faultName,jdbcType=VARCHAR}
+  </delete>
+  <select id="validateAlert" parameterType="com.hcycom.platformKBrest.entity.CtgPmAlertExp" resultMap="AlertMap">
+  	select PLATFORM_ID, FAULT_TYPE, FAULT_NAME, 
+      CAUSE, SUGGEST, INFLUENCE, 
+      REMARKS from CTG_PM_ALERT_EXP where PLATFORM_ID = #{platformId,jdbcType=DECIMAL} and FAULT_NAME = #{faultName,jdbcType=VARCHAR}
+  </select>
+  <update id="updateAlert" parameterType="com.hcycom.platformKBrest.entity.CtgPmAlertExp"> 
+  	update CTG_PM_ALERT_EXP set FAULT_TYPE = #{faultType},
+  	CAUSE = #{cause},SUGGEST = #{suggest},INFLUENCE = #{influence},REMARKS = #{remarks} where PLATFORM_ID = #{platformId} and FAULT_NAME = #{faultName}
+  </update>
+  <select id="showAlert" resultMap="AlertMap">
+  	select PLATFORM_ID, FAULT_TYPE, FAULT_NAME, 
+      CAUSE, SUGGEST, INFLUENCE, 
+      REMARKS from CTG_PM_ALERT_EXP
+  </select>
+</mapper>

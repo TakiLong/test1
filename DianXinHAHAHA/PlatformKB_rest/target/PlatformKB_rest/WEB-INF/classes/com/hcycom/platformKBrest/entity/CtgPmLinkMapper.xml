@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hcycom.platformKBrest.dao.CtgPmLinkMapper" >
+  <resultMap id="linkMap" type="com.hcycom.platformKBrest.entity.CtgPmLink" >
+    <result column="PLATFORM_ID" property="platformId" jdbcType="DECIMAL" />
+    <result column="LINK_NAME" property="linkName" jdbcType="VARCHAR" />
+    <result column="A_DEVICE" property="aDevice" jdbcType="VARCHAR" />
+    <result column="A_PORT" property="aPort" jdbcType="VARCHAR" />
+    <result column="A_IP" property="aIp" jdbcType="VARCHAR" />
+    <result column="Z_DEVICE" property="zDevice" jdbcType="VARCHAR" />
+    <result column="Z_PORT" property="zPort" jdbcType="VARCHAR" />
+    <result column="Z_IP" property="zIp" jdbcType="VARCHAR" />
+    <result column="ROUTE" property="route" jdbcType="VARCHAR" />
+    <result column="REMARKS" property="remarks" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insert" parameterType="com.hcycom.platformKBrest.entity.CtgPmLink" >
+    insert into CTG_PM_LINK (PLATFORM_ID, LINK_NAME, A_DEVICE, 
+      A_PORT, A_IP, Z_DEVICE, 
+      Z_PORT, Z_IP, ROUTE, 
+      REMARKS)
+    values (#{platformId,jdbcType=DECIMAL}, #{linkName,jdbcType=VARCHAR}, #{aDevice,jdbcType=VARCHAR}, 
+      #{aPort,jdbcType=VARCHAR}, #{aIp,jdbcType=VARCHAR}, #{zDevice,jdbcType=VARCHAR}, 
+      #{zPort,jdbcType=VARCHAR}, #{zIp,jdbcType=VARCHAR}, #{route,jdbcType=VARCHAR}, 
+      #{remarks,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hcycom.platformKBrest.entity.CtgPmLink" >
+    insert into CTG_PM_LINK
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="platformId != null" >
+        PLATFORM_ID,
+      </if>
+      <if test="linkName != null" >
+        LINK_NAME,
+      </if>
+      <if test="aDevice != null" >
+        A_DEVICE,
+      </if>
+      <if test="aPort != null" >
+        A_PORT,
+      </if>
+      <if test="aIp != null" >
+        A_IP,
+      </if>
+      <if test="zDevice != null" >
+        Z_DEVICE,
+      </if>
+      <if test="zPort != null" >
+        Z_PORT,
+      </if>
+      <if test="zIp != null" >
+        Z_IP,
+      </if>
+      <if test="route != null" >
+        ROUTE,
+      </if>
+      <if test="remarks != null" >
+        REMARKS,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="platformId != null" >
+        #{platformId,jdbcType=DECIMAL},
+      </if>
+      <if test="linkName != null" >
+        #{linkName,jdbcType=VARCHAR},
+      </if>
+      <if test="aDevice != null" >
+        #{aDevice,jdbcType=VARCHAR},
+      </if>
+      <if test="aPort != null" >
+        #{aPort,jdbcType=VARCHAR},
+      </if>
+      <if test="aIp != null" >
+        #{aIp,jdbcType=VARCHAR},
+      </if>
+      <if test="zDevice != null" >
+        #{zDevice,jdbcType=VARCHAR},
+      </if>
+      <if test="zPort != null" >
+        #{zPort,jdbcType=VARCHAR},
+      </if>
+      <if test="zIp != null" >
+        #{zIp,jdbcType=VARCHAR},
+      </if>
+      <if test="route != null" >
+        #{route,jdbcType=VARCHAR},
+      </if>
+      <if test="remarks != null" >
+        #{remarks,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="showLinkById" parameterType="com.hcycom.platformKBrest.entity.CtgPmLink" resultMap="linkMap">
+  	select PLATFORM_ID, LINK_NAME, A_DEVICE, 
+      A_PORT, A_IP, Z_DEVICE, 
+      Z_PORT, Z_IP, ROUTE, 
+      REMARKS from CTG_PM_LINK where PLATFORM_ID = #{platformId} and LINK_NAME = #{linkName}
+  </select>
+  
+  <delete id="deleteLink" parameterType="com.hcycom.platformKBrest.entity.CtgPmLink">
+  	delete from CTG_PM_LINK where PLATFORM_ID = #{platformId} and LINK_NAME = #{linkName}
+  </delete>
+  
+  <update id="updateLink" parameterType="com.hcycom.platformKBrest.entity.CtgPmLink">
+  update CTG_PM_LINK set A_DEVICE = #{aDevice},A_PORT = #{aPort},A_IP = #{aIp},Z_DEVICE = #{aDevice}
+  ,Z_PORT = #{zPort},Z_IP = #{zIp},ROUTE = #{route},REMARKS = #{remarks} where PLATFORM_ID = #{platformId} and LINK_NAME = #{linkName}
+  </update>
+  
+  <select id="listLink" resultMap="linkMap">
+  	select PLATFORM_ID, LINK_NAME, A_DEVICE, 
+      A_PORT, A_IP, Z_DEVICE, 
+      Z_PORT, Z_IP, ROUTE, 
+      REMARKS from CTG_PM_LINK
+  </select>
+</mapper>

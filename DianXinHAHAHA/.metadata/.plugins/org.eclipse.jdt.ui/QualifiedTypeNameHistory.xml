@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.service.CirInfoService"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.entity.CirAddinfo"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.entity.CirInfo"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.service.CirAddinfoService"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.base.BaseDao"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.util.DateUtil"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.modle.Result"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.entity.Result"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.entity.PingTask"/>
+<fullyQualifiedTypeName name="javax.websocket.Decoder"/>
+<fullyQualifiedTypeName name="java.net.URLDecoder"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.dao.UserMapper"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.service.UserService"/>
+<fullyQualifiedTypeName name="com.hcycom.pingtest.entity.User"/>
+</qualifiedTypeNameHistroy>
