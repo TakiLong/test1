@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hcycom.pingtest.dao.PingResultMapper">
+  <resultMap id="BaseResultMap" type="com.hcycom.pingtest.entity.PingResult">
+    <result column="TASK_ID" jdbcType="DECIMAL" property="taskId" />
+    <result column="EXECUTE_TIME" jdbcType="TIMESTAMP" property="executeTime" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
+    <result column="DELAY_MIN" jdbcType="DECIMAL" property="delayMin" />
+    <result column="DELAY_MAX" jdbcType="DECIMAL" property="delayMax" />
+    <result column="DELAY_AVG" jdbcType="DECIMAL" property="delayAvg" />
+    <result column="PLR_AVG" jdbcType="DECIMAL" property="plrAvg" />
+    <result column="CMD_RESULT" jdbcType="VARCHAR" property="cmdResult" />
+    <result column="CIRCUIT_NO" property="circuitNo" jdbcType="VARCHAR" />
+    <result column="CUST_NAME" property="custName" jdbcType="VARCHAR" />
+    <result column="SOURCE_NE" property="sourceNe" jdbcType="VARCHAR" />
+     <result column="DEST_IP" property="destIp" jdbcType="VARCHAR" />
+    <result column="PING_CMD" property="pingCmd" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+	TASK_ID, EXECUTE_TIME, STATUS, 
+      DELAY_MIN, DELAY_MAX, DELAY_AVG, 
+       PLR_AVG, CMD_RESULT
+  </sql>
+
+  <insert id="insert" parameterType="com.hcycom.pingtest.entity.PingResult">
+    insert into CTG_PINGTEST_RESULT
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="taskId != null">
+        TASK_ID,
+      </if>
+      <if test="executeTime != null">
+        EXECUTE_TIME,
+      </if>
+      <if test="status != null">
+        STATUS,
+      </if>
+      <if test="delayMin != null">
+        DELAY_MIN,
+      </if>
+      <if test="delayMax != null">
+        DELAY_MAX,
+      </if>
+      <if test="delayAvg != null">
+        DELAY_AVG,
+      </if>
+      <if test="plrAvg != null">
+        PLR_AVG,
+      </if>
+      <if test="cmdResult != null">
+        CMD_RESULT,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="taskId != null">
+        #{taskId,jdbcType=DECIMAL},
+      </if>
+      <if test="executeTime != null">
+        #{executeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="delayMin != null">
+        #{delayMin,jdbcType=DECIMAL},
+      </if>
+      <if test="delayMax != null">
+        #{delayMax,jdbcType=DECIMAL},
+      </if>
+      <if test="delayAvg != null">
+        #{delayAvg,jdbcType=DECIMAL},
+      </if>
+      <if test="plrAvg != null">
+        #{plrAvg,jdbcType=DECIMAL},
+      </if>
+      <if test="cmdResult != null">
+        #{cmdResult,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="selectByTime"   resultMap="BaseResultMap" >
+     select  
+    a.TASK_ID, a.EXECUTE_TIME, a.STATUS, 
+      a.DELAY_MIN, a.DELAY_MAX, a.DELAY_AVG, 
+       a.PLR_AVG, a.CMD_RESULT , 
+       b.DEST_IP , b.CIRCUIT_NO , b.CUST_NAME , b.SOURCE_NE ,b.PING_CMD
+    from CTG_PINGTEST_RESULT a,(select * from CTG_PINGTEST_TASK where CIRCUIT_No = #{circuitNo,jdbcType=VARCHAR}) b 
+    where a.TASK_ID=b.id and
+    a.EXECUTE_TIME between to_date(#{time1,jdbcType=VARCHAR},'yyyy-mm-dd hh24:mi:ss')
+	and to_date(#{time2,jdbcType=VARCHAR},'yyyy-mm-dd hh24:mi:ss') Order by a.EXECUTE_TIME desc 
+  </select>
+  <select id="selectByType"   resultMap="BaseResultMap"  parameterType="java.lang.String">
+    select
+    <include refid="Base_Column_List" />
+    from CTG_PINGTEST_RESULT where TASK_ID in (select ID from CTG_PINGTEST_TASK where CIRCUIT_TYPE = #{circuitType,jdbcType=VARCHAR})  
+  </select>
+  <select id="selectByCircuitNo"   resultMap="BaseResultMap"  parameterType="java.lang.String">
+    select
+    <include refid="Base_Column_List" />
+    from CTG_PINGTEST_RESULT where TASK_ID in (select ID from CTG_PINGTEST_TASK where CIRCUIT_No = #{circuitNo,jdbcType=VARCHAR})  
+  </select>
+  <select id="selectByNo"   resultMap="BaseResultMap"  parameterType="java.lang.Integer">
+    select
+    <include refid="Base_Column_List" />
+    from CTG_PINGTEST_RESULT where TASK_ID =  #{taskId,jdbcType=DECIMAL} 
+        Order by EXECUTE_TIME desc  
+  </select>
+</mapper>

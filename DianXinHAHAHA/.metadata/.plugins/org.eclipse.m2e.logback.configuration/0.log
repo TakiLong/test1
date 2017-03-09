@@ -3330,3 +3330,626 @@ java.io.FileNotFoundException: D:\apache-maven-3.2.5\bin\m2.conf (系统找不到指定
 2017-02-08 16:15:23,878 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-02-08 16:15:23,882 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-02-08 16:15:23,882 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 16:48:27,887 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 16:48:27,893 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 16:48:27,900 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 16:48:27,900 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 16:49:00,262 [main] ERROR o.e.m.c.i.l.MavenExternalRuntime - Could not parse classwords configuration file
+java.io.FileNotFoundException: D:\apache-maven-3.2.5\bin\m2.conf (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method) ~[na:1.7.0_80]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.7.0_80]
+	at org.eclipse.m2e.core.internal.launch.MavenExternalRuntime.getVersion0(MavenExternalRuntime.java:235) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.launch.MavenExternalRuntime.getVersion(MavenExternalRuntime.java:194) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.launch.MavenExternalRuntime.toString(MavenExternalRuntime.java:163) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.preferences.launch.MavenInstallationsPreferencePage$RuntimesLabelProvider.getColumnText(MavenInstallationsPreferencePage.java:313) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.jface.viewers.TableColumnViewerLabelProvider.update(TableColumnViewerLabelProvider.java:66) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.doUpdateItem(AbstractTableViewer.java:385) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.CheckboxTableViewer.doUpdateItem(CheckboxTableViewer.java:169) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:473) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2176) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.createItem(AbstractTableViewer.java:276) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.internalRefreshAll(AbstractTableViewer.java:723) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.internalRefresh(AbstractTableViewer.java:615) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.internalRefresh(AbstractTableViewer.java:607) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer$1.run(AbstractTableViewer.java:567) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1462) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1423) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.CheckboxTableViewer.preservingSelection(CheckboxTableViewer.java:344) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.inputChanged(AbstractTableViewer.java:564) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:292) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1701) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.m2e.core.ui.internal.preferences.launch.MavenInstallationsPreferencePage.createContents(MavenInstallationsPreferencePage.java:130) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.jface.preference.PreferencePage.createControl(PreferencePage.java:241) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog.createPageControl(PreferenceDialog.java:1450) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog$13.run(PreferenceDialog.java:1217) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog.showPage(PreferenceDialog.java:1209) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.ui.internal.dialogs.FilteredPreferenceDialog.showPage(FilteredPreferenceDialog.java:608) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog$9$1.run(PreferenceDialog.java:675) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog$9.selectionChanged(PreferenceDialog.java:670) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer$3.run(StructuredViewer.java:877) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.firePostSelectionChanged(StructuredViewer.java:874) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.handlePostSelect(StructuredViewer.java:1243) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer$5.widgetSelected(StructuredViewer.java:1269) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.util.OpenStrategy.firePostSelectionEvent(OpenStrategy.java:265) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.util.OpenStrategy.access$5(OpenStrategy.java:259) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.util.OpenStrategy$1$2.run(OpenStrategy.java:440) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.window.Window.open(Window.java:803) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:211) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:63) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156) [org.eclipse.e4.ui.workbench_1.3.1.v20160203-0951.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139) [org.eclipse.ui.ide.application_1.1.0.v20150422-0725.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.300.v20150423-1356.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_80]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_80]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_80]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_80]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+2017-03-09 16:49:42,840 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 16:49:42,840 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" test
+2017-03-09 16:49:47,308 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 16:49:47,311 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 16:49:47,313 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 16:49:47,313 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 16:50:06,288 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-03-09 16:50:23,893 [main] ERROR o.e.m.c.i.l.MavenExternalRuntime - Could not parse classwords configuration file
+java.io.FileNotFoundException: D:\apache-maven-3.2.5\bin\m2.conf (系统找不到指定的路径。)
+	at java.io.FileInputStream.open(Native Method) ~[na:1.7.0_80]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.7.0_80]
+	at org.eclipse.m2e.core.internal.launch.MavenExternalRuntime.getVersion0(MavenExternalRuntime.java:235) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.launch.MavenExternalRuntime.getVersion(MavenExternalRuntime.java:194) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.launch.MavenExternalRuntime.toString(MavenExternalRuntime.java:163) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.preferences.launch.MavenInstallationsPreferencePage$RuntimesLabelProvider.getColumnText(MavenInstallationsPreferencePage.java:313) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.jface.viewers.TableColumnViewerLabelProvider.update(TableColumnViewerLabelProvider.java:66) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.ViewerColumn.refresh(ViewerColumn.java:154) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.doUpdateItem(AbstractTableViewer.java:385) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.CheckboxTableViewer.doUpdateItem(CheckboxTableViewer.java:169) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(StructuredViewer.java:473) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.updateItem(StructuredViewer.java:2176) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.createItem(AbstractTableViewer.java:276) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.internalRefreshAll(AbstractTableViewer.java:723) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.internalRefresh(AbstractTableViewer.java:615) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.internalRefresh(AbstractTableViewer.java:607) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer$1.run(AbstractTableViewer.java:567) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1462) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1423) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.CheckboxTableViewer.preservingSelection(CheckboxTableViewer.java:344) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.AbstractTableViewer.inputChanged(AbstractTableViewer.java:564) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:292) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1701) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.m2e.core.ui.internal.preferences.launch.MavenInstallationsPreferencePage.createContents(MavenInstallationsPreferencePage.java:130) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.jface.preference.PreferencePage.createControl(PreferencePage.java:241) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog.createPageControl(PreferenceDialog.java:1450) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog$13.run(PreferenceDialog.java:1217) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog.showPage(PreferenceDialog.java:1209) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.ui.internal.dialogs.FilteredPreferenceDialog.showPage(FilteredPreferenceDialog.java:608) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog$9$1.run(PreferenceDialog.java:675) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.jface.preference.PreferenceDialog$9.selectionChanged(PreferenceDialog.java:670) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer$3.run(StructuredViewer.java:877) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.firePostSelectionChanged(StructuredViewer.java:874) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.handlePostSelect(StructuredViewer.java:1243) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer$5.widgetSelected(StructuredViewer.java:1269) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.util.OpenStrategy.firePostSelectionEvent(OpenStrategy.java:265) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.util.OpenStrategy.access$5(OpenStrategy.java:259) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.util.OpenStrategy$1$2.run(OpenStrategy.java:440) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.window.Window.open(Window.java:803) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:211) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:63) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156) [org.eclipse.e4.ui.workbench_1.3.1.v20160203-0951.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139) [org.eclipse.ui.ide.application_1.1.0.v20150422-0725.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.300.v20150423-1356.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_80]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_80]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_80]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_80]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+2017-03-09 17:01:14,051 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 17:01:14,051 [Worker-13] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" -Dmaven.tomcat.port=8080 tomcat:run
+2017-03-09 17:02:02,632 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:02:02,632 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:02:02,633 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:02:02,633 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:02:03,647 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:02:03,648 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:02:03,649 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:02:03,649 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:02:10,557 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-09 17:02:11,125 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:02:12,261 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ctg_pingtest/src/main/java
+2017-03-09 17:02:12,261 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ctg_pingtest/src/main/resources
+2017-03-09 17:02:12,263 [Worker-28] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ctg_pingtest/src/test/java
+2017-03-09 17:02:12,909 [Worker-28] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ctg_pingtest
+2017-03-09 17:02:12,918 [Worker-28] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2017-03-09 17:02:14,015 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:02:14,015 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:02:14,028 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:02:14,028 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:02:14,028 [Worker-30] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:02:14,029 [Worker-30] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:02:14,033 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:06:09,028 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-03-09 17:06:09,048 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 17:06:09,048 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" -Dmaven.tomcat.port=8080 tomcat:run
+2017-03-09 17:13:19,267 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:13:19,269 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:13:19,271 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:13:19,271 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:14:25,681 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:14:25,681 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:14:25,683 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:14:25,684 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:14:54,356 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:14:54,356 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:14:54,358 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:14:54,358 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:15:02,202 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-03-09 17:15:09,263 [Worker-42] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 17:15:09,263 [Worker-42] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" -Dmaven.tomcat.port=8080 tomcat:run
+2017-03-09 17:17:05,528 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:17:05,529 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:17:05,531 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:17:05,531 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:17:19,655 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:17:19,655 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:17:19,656 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:17:19,656 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:18:30,953 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:18:30,954 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:18:30,956 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:18:30,956 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:18:57,946 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-03-09 17:18:57,965 [Worker-44] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 17:18:57,965 [Worker-44] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" -Dmaven.tomcat.port=8080 tomcat:run
+2017-03-09 17:21:40,811 [Worker-51] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:21:42,716 [Worker-51] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://115.28.13.213:8081/nexus/content/groups/public/mysql/mysql-connector-java/5.0.5/mysql-connector-java-5.0.5.pom
+2017-03-09 17:21:42,803 [Worker-51] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://115.28.13.213:8081/nexus/content/groups/public/mysql/mysql-connector-java/5.0.5/mysql-connector-java-5.0.5.pom
+2017-03-09 17:21:44,863 [Worker-51] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://115.28.13.213:8081/nexus/content/groups/public/mysql/mysql-connector-java/5.0.5/mysql-connector-java-5.0.5.jar
+2017-03-09 17:21:47,215 [Worker-51] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://115.28.13.213:8081/nexus/content/groups/public/mysql/mysql-connector-java/5.0.5/mysql-connector-java-5.0.5.jar
+2017-03-09 17:21:47,945 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:21:47,946 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:21:47,948 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:21:47,948 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:21:47,948 [Worker-51] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:21:47,948 [Worker-51] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:21:47,951 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:21:49,548 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:21:49,549 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:21:49,559 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:21:49,559 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:22:41,165 [Worker-48] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-09 17:22:41,601 [Worker-48] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:22:42,427 [Worker-48] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ctg_pingtest/src/main/java
+2017-03-09 17:22:42,428 [Worker-48] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ctg_pingtest/src/main/resources
+2017-03-09 17:22:42,428 [Worker-48] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ctg_pingtest/src/test/java
+2017-03-09 17:22:42,868 [Worker-48] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ctg_pingtest
+2017-03-09 17:22:42,874 [Worker-48] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-03-09 17:22:43,412 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:22:43,413 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:22:43,422 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:22:43,422 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:22:43,422 [Worker-48] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:22:43,422 [Worker-48] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:22:43,425 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:02,902 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:24:03,682 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:03,684 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:24:03,685 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:03,685 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:24:03,686 [Worker-44] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:24:03,686 [Worker-44] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:24:03,688 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:05,117 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:05,118 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:24:05,128 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:05,128 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:24:44,426 [Worker-55] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:24:45,325 [Worker-55] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://115.28.13.213:8081/nexus/content/groups/public/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.pom
+2017-03-09 17:24:45,421 [Worker-55] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://115.28.13.213:8081/nexus/content/groups/public/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.pom
+2017-03-09 17:24:47,421 [Worker-55] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://115.28.13.213:8081/nexus/content/groups/public/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.jar
+2017-03-09 17:24:54,641 [Worker-55] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://115.28.13.213:8081/nexus/content/groups/public/mysql/mysql-connector-java/5.1.17/mysql-connector-java-5.1.17.jar
+2017-03-09 17:24:55,314 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:55,315 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:24:55,317 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:55,317 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:24:55,317 [Worker-55] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:24:55,317 [Worker-55] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:24:55,320 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:56,961 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:56,963 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:24:56,971 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:24:56,971 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:29:55,742 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:30:03,639 [Worker-61] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/hcycom/jdbc/dbutil/1.0/dbutil-1.0.pom
+2017-03-09 17:30:03,641 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:30:08,084 [Worker-61] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/sybase/jConnect/jconn3d/6.0.26023/jconn3d-6.0.26023.pom
+2017-03-09 17:30:08,085 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:30:11,267 [Worker-61] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/sybase/jConnect/jTDS3d/6.0.26023/jTDS3d-6.0.26023.pom
+2017-03-09 17:30:11,268 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:30:21,716 [Worker-61] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/hcycom/jdbc/dbutil/1.0/dbutil-1.0.jar
+2017-03-09 17:30:24,763 [Worker-61] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/sybase/jConnect/jconn3d/6.0.26023/jconn3d-6.0.26023.jar
+2017-03-09 17:30:28,013 [Worker-61] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/sybase/jConnect/jTDS3d/6.0.26023/jTDS3d-6.0.26023.jar
+2017-03-09 17:30:30,925 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:30:30,926 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:30:30,928 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:30:43,533 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:30:43,535 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:30:43,537 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:30:43,537 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:30:43,538 [Worker-61] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:30:43,538 [Worker-61] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:30:43,541 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:30:44,902 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:30:44,904 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:30:44,905 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:30:45,109 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:30:45,111 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:30:45,121 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:30:45,122 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:31:09,301 [Worker-67] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:31:09,783 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:31:09,786 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:09,788 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:10,249 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:31:10,251 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:10,253 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:10,775 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:10,776 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:31:10,778 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:10,778 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:31:10,778 [Worker-67] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:31:10,778 [Worker-67] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:31:10,781 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:12,143 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:31:12,144 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:12,146 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:12,371 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:12,374 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:31:12,386 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:12,386 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:31:15,131 [Worker-66] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:31:15,217 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:31:15,219 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:15,221 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:15,391 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:31:15,393 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:15,394 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:15,886 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:15,887 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:31:15,889 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:15,889 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:31:15,889 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:31:15,889 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:31:15,892 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:57,095 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:57,096 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:57,476 [Worker-60] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:31:57,560 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:57,562 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:57,732 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:57,734 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:58,252 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:58,253 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:31:58,254 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:58,255 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:31:58,255 [Worker-60] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:31:58,255 [Worker-60] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:31:58,258 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:59,660 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:59,662 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:31:59,872 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:59,875 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:31:59,885 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:31:59,885 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:32:02,271 [Worker-64] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:32:02,352 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:32:02,354 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:02,356 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:02,509 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:32:02,511 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:02,513 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:02,985 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:02,986 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:32:02,987 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:02,987 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:32:02,987 [Worker-64] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:32:02,987 [Worker-64] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:32:02,991 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:04,327 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:32:04,329 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:04,330 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:04,514 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:04,517 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:32:04,527 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:04,527 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:32:31,683 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:32:31,773 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:32:31,775 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:31,925 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:32:31,927 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:32,416 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:32,417 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:32:32,419 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:32,419 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:32:32,419 [Worker-61] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:32:32,419 [Worker-61] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:32:32,422 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:33,725 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:32:33,728 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:33,908 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:33,910 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:32:33,920 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:33,920 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:32:50,045 [Worker-66] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:32:50,113 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:32:50,114 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:50,541 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:32:50,543 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:32:50,994 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:50,995 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:32:50,996 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:32:50,996 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:32:50,996 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:32:50,996 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:32:50,999 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:02,467 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:33:02,469 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:02,470 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:02,802 [Worker-69] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:33:02,873 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:33:02,875 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:02,876 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:03,028 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:33:03,029 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:03,031 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:03,484 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:03,485 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:33:03,487 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:03,487 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:33:03,487 [Worker-69] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:33:03,487 [Worker-69] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:33:03,490 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:04,826 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:33:04,828 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:04,831 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:05,005 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:05,007 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:33:05,019 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:05,019 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:33:10,405 [Worker-70] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:33:10,475 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:10,477 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:33:10,479 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:10,626 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:10,628 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:33:10,629 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:11,100 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:11,101 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:33:11,102 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:11,103 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:33:11,103 [Worker-70] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:33:11,103 [Worker-70] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:33:11,106 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:12,447 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:12,448 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:33:12,450 [Worker-62] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:33:12,629 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:12,632 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:33:12,643 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:33:12,643 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:37:43,625 [Worker-66] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:37:47,207 [Worker-66] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/sybase/jConnect/jtds/1.2/jtds-1.2.pom
+2017-03-09 17:37:47,208 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jtds:jar:1.2 is missing, no dependency information available
+2017-03-09 17:37:47,210 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:37:47,212 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:37:53,671 [Worker-66] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/com/sybase/jConnect/jtds/1.2/jtds-1.2.jar
+2017-03-09 17:37:53,784 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jtds:jar:1.2 is missing, no dependency information available
+2017-03-09 17:37:53,785 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:37:53,786 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:37:54,232 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:37:54,233 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:37:54,235 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:37:54,235 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:37:54,235 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:37:54,235 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:37:54,237 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:38:21,129 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:38:21,131 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:38:21,133 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:38:21,453 [Worker-66] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:38:21,523 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:38:21,524 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:38:21,525 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:38:21,667 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:38:21,670 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:38:21,672 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:38:22,123 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:38:22,124 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:38:22,125 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:38:22,125 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:38:22,126 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:38:22,126 [Worker-66] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:38:22,128 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:38:23,497 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.hcycom.jdbc:dbutil:jar:1.0 is missing, no dependency information available
+2017-03-09 17:38:23,499 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jconn3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:38:23,502 [Worker-72] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sybase.jConnect:jTDS3d:jar:6.0.26023 is missing, no dependency information available
+2017-03-09 17:38:23,670 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:38:23,672 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:38:23,682 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:38:23,682 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:40:03,412 [Worker-72] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:40:04,076 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:40:04,077 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:40:04,078 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:40:04,078 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:40:04,078 [Worker-72] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:40:04,078 [Worker-72] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:40:04,081 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:40:05,579 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:40:05,581 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:40:05,592 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:40:05,592 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:40:11,872 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-03-09 17:40:11,891 [Worker-66] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 17:40:11,892 [Worker-66] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" -Dmaven.tomcat.port=8080 tomcat:run
+2017-03-09 17:44:53,559 [Worker-80] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:44:54,223 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:44:54,225 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:44:54,227 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:44:54,227 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:44:54,227 [Worker-80] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:44:54,227 [Worker-80] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:44:54,230 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:44:55,571 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:44:55,572 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-09 17:44:55,573 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:44:55,574 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:47:25,517 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:47:25,517 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:47:25,523 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:47:25,523 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:48:57,240 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:48:57,240 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:48:57,242 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:48:57,242 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:49:21,457 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:49:21,457 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:49:21,459 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:49:21,460 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:49:55,525 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-03-09 17:49:55,543 [Worker-86] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 17:49:55,544 [Worker-86] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" -Dmaven.tomcat.port=8080 tomcat:run
+2017-03-09 17:50:36,742 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:50:36,742 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:50:36,744 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:50:36,744 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:50:51,349 [Worker-84] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-09 17:50:51,676 [Worker-84] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.hcycom:ctg_pingtest:0.0.1-SNAPSHOT @ F:\program\DianXinHAHAHA\ctg_pingtest\pom.xml.
+2017-03-09 17:50:52,357 [Worker-84] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ctg_pingtest/src/main/java
+2017-03-09 17:50:52,357 [Worker-84] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ctg_pingtest/src/main/resources
+2017-03-09 17:50:52,358 [Worker-84] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ctg_pingtest/src/test/java
+2017-03-09 17:50:52,732 [Worker-84] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for ctg_pingtest
+2017-03-09 17:50:52,736 [Worker-84] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-03-09 17:50:53,300 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:50:53,300 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:50:53,310 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:50:53,310 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:50:53,310 [Worker-85] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of ctg_pingtest
+2017-03-09 17:50:53,310 [Worker-85] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for ctg_pingtest
+2017-03-09 17:50:53,313 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:51:34,483 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:51:34,485 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:51:34,486 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:51:34,486 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:51:44,215 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-03-09 17:51:44,235 [Worker-91] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 17:51:44,235 [Worker-91] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" -Dmaven.tomcat.port=8080 tomcat:run
+2017-03-09 17:53:26,307 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:53:26,308 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:53:26,309 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:53:26,309 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:54:46,073 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:54:46,074 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:54:46,075 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:54:46,075 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:55:20,368 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:55:20,368 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2017-03-09 17:55:20,370 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:55:20,370 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:55:45,950 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-03-09 17:55:45,968 [Worker-90] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 17:55:45,968 [Worker-90] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" -Dmaven.tomcat.port=8080 tomcat:run
+2017-03-09 17:56:45,574 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:56:45,576 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:56:45,577 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:56:45,577 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:57:52,066 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:57:52,067 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:57:52,068 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:57:52,068 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:58:18,207 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:58:18,209 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:58:18,211 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:58:18,211 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:58:41,807 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:58:41,808 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-03-09 17:58:41,810 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-09 17:58:41,810 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\program\DianXinHAHAHA\ctg_pingtest\src\test\resources
+2017-03-09 17:58:51,157 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-03-09 17:58:51,172 [Worker-99] INFO  o.e.m.i.launch.MavenLaunchDelegate - F:\program\DianXinHAHAHA\ctg_pingtest
+2017-03-09 17:58:51,172 [Worker-99] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -s "F:\program\maven setting\settings.xml" -Dmaven.tomcat.port=8080 tomcat:run

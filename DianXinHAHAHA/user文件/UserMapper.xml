@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hcycom.pingtest.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.hcycom.pingtest.entity.User" >
+    <result column="user_id" property="id" jdbcType="VARCHAR" />
+    <result column="user_loginname" property="loginName" jdbcType="VARCHAR" />
+    <result column="user_passwd" property="passwd" jdbcType="VARCHAR" />
+    <result column="user_realname" property="realName" jdbcType="VARCHAR" />
+    <result column="user_sex" property="sex" jdbcType="int" />
+    <result column="user_birth" property="birth" jdbcType="date" />
+    <result column="user_phone" property="phone" jdbcType="VARCHAR" />
+    <result column="user_address" property="address" jdbcType="VARCHAR" />
+    <result column="user_email" property="email" jdbcType="VARCHAR" />
+    <result column="user_remark" property="remark" jdbcType="VARCHAR" />
+    <result column="user_roll" property="roll" jdbcType="int" />
+  </resultMap>
+  
+  <sql id="Base_Column_List" >
+	user_id, user_loginname, user_passwd, user_realname, user_sex, user_birth, user_phone, user_address,
+	user_email, user_remark, user_roll
+  </sql>
+  
+  <select id="login"  resultMap="BaseResultMap" parameterType="com.hcycom.pingtest.entity.User">
+    select
+    <include refid="Base_Column_List" />
+    from CTG_GIS_CIRCUIT_INFO where user_loginname=#{loginName,jdbcType=VARCHAR} 
+    and user_passwd==#{passwd,jdbcType=VARCHAR}
+  </select>
+  
+</mapper>

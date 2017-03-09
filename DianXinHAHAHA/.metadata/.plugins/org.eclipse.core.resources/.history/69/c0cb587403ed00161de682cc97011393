@@ -1,9 +1,0 @@
-package com.hcycom.pingtest.dao;
-
-import java.util.List;
-
-public interface UserMapper {
-	 List<CirInfo> selectAll();
-	 List<CirInfo> selectAllNo();
-	 CirInfo selectByNo(String circuitNo);
-}
